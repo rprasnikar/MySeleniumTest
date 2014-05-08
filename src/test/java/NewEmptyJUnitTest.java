@@ -71,7 +71,7 @@ public class NewEmptyJUnitTest {
          WebElement i = driver.findElement(By.id("s"));
          i.click();
          System.out.println("Page title is: " + driver.getTitle());
-         Assert.assertFalse(driver.getTitle().contains("Error"));
+         Assert.assertTrue(driver.getTitle().contains("JSP Demo"));
          driver.quit();
     }
 }
